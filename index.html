@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kognitiv profil</title>
+        <link rel="stylesheet" href="style/style.css">
+    </head>
+    <body>
+        <script src="script/script.js"></script>
+
+        <h1>Kognitiv profil</h1>
+        
+        <div class="container">
+            <img src="img/top.png" class="profileImg" />
+            
+            <div class="midZone">
+
+                <div class="objDiv vfi" id="vfiElement"></div>
+                <div class="objDiv vsi" id="vsiElement"></div>
+                <div class="objDiv rsi" id="rsiElement"></div>
+                <div class="objDiv ahi" id="ahiElement"></div>
+                <div class="objDiv fhi" id="fhiElement"></div>
+                <div class="objDiv hik" id="hikElement"></div>
+                <div class="objDiv vki" id="vkiElement"></div>
+                <div class="objDiv gfi" id="gfiElement"></div>
+                <div class="objDiv kei" id="keiElement"></div>
+                <div class="spacer"></div>
+
+                <img src="img/mid.png" class="midImg"/>
+            </div>
+            
+            <img src="img/bottom.png" class="profileImg" />
+        </div>
+        <br>
+        <br>
+        <div class="container">
+            <table class="categoriTable">
+                <tr>
+                    <td>
+                        <div class="categoriBox vfi">
+                            <p class="categoriLabel">VFI</p>
+                        </div>
+                    </td>
+                    <td>
+                        <input id="vfiText" class="categoriTextBox" type="text" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="categoriBox vsi">
+                            <p class="categoriLabel">VSI</p>
+                        </div>
+                    </td>
+                    <td>
+                        <input id="vsiText" class="categoriTextBox" type="text" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="categoriBox rsi">
+                            <p class="categoriLabel">RSI</p>
+                        </div>
+                    </td>
+                    <td>
+                        <input id="rsiText" class="categoriTextBox" type="text" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="categoriBox ahi">
+                            <p class="categoriLabel">AHI</p>
+                        </div>
+                    </td>
+                    <td>
+                        <input id="ahiText" class="categoriTextBox" type="text" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="categoriBox fhi">
+                            <p class="categoriLabel">FHI</p>
+                        </div>
+                    </td>
+                    <td>
+                        <input id="fhiText" class="categoriTextBox" type="text" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="categoriBox hik">
+                            <p class="categoriLabel">HIK</p>
+                        </div>
+                    </td>
+                    <td>
+                        <input id="hikText" class="categoriTextBox" type="text" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="categoriBox vki">
+                            <p class="categoriLabel">VKI</p>
+                        </div>
+                    </td>
+                    <td>
+                        <input id="vkiText" class="categoriTextBox" type="text" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="categoriBox gfi">
+                            <p class="categoriLabel">GFI</p>
+                        </div>
+                    </td>
+                    <td>
+                        <input id="gfiText" class="categoriTextBox" type="text" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="categoriBox kei">
+                            <p class="categoriLabel">KEI</p>
+                        </div>
+                    </td>
+                    <td>
+                        <input id="keiText" class="categoriTextBox" type="text" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="buttonTd">
+                        <button id="updateButton" onclick="ClickUpdateButton()">Opdater</button>
+                        <button id="clearButton" onclick="ClickClearButton()">Nulstil</button>
+                    </td>
+                </tr>
+            </table>
+            
+        </div>
+
+    </body>
+</html>
