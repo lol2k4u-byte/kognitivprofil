@@ -8,6 +8,13 @@ function ClickUpdateButton() {
     ProcessCategori("vki");
     ProcessCategori("gfi");
     ProcessCategori("kei");
+
+    ShowContainer();
+    ClearImgContainer();
+    CreateImg();
+    HideContainer();
+
+    window.scrollTo(0, 0);
 }
 
 function ClickClearButton() {
@@ -20,6 +27,40 @@ function ClickClearButton() {
     ClearInput("vki");
     ClearInput("gfi");
     ClearInput("kei");
+    
+    ClearImgContainer();
+    HideContainer();
+}
+
+
+
+function ClearImgContainer() {
+    let imgContainer = document.getElementById("imgContainer");
+
+    while (imgContainer.firstChild) {
+        imgContainer.removeChild(imgContainer.firstChild);
+    }
+}
+
+
+
+function CreateImg() {
+    let profileContainer = document.getElementById("profileContainer");
+    let imgContainer = document.getElementById("imgContainer");
+
+    html2canvas(profileContainer).then(function(canvas) {
+        imgContainer.appendChild(canvas);
+    });
+}
+
+function ShowContainer()
+{
+    document.getElementById("hideContainer").style.display = "block";
+}
+
+function HideContainer()
+{
+    document.getElementById("hideContainer").style.display = "none";
 }
 
 function ClearInput(categori)

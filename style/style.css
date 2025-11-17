@@ -8,6 +8,11 @@ h1 {
     font-weight: bold;
 }
 
+.ventLabel {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
 .profileImg {
     width: 100%;
     display: block;
@@ -27,6 +32,10 @@ h1 {
     width: 100%;
     position: relative;
     display: block;
+}
+
+#hideContainer {
+    display: none;
 }
 
 .objDiv {

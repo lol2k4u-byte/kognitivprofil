@@ -6,29 +6,37 @@
     </head>
     <body>
         <script src="script/script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 
         <h1>Kognitiv profil</h1>
         
-        <div class="container">
-            <img src="img/top.png" class="profileImg" />
+        <div class="container" id="hideContainer">
+            <p class="ventLabel">Vent et øjeblik...</p>
+            <div class="container" id="profileContainer">
+                <img src="img/top.png" class="profileImg" />
             
-            <div class="midZone">
+                <div class="midZone">
 
-                <div class="objDiv vfi" id="vfiElement"></div>
-                <div class="objDiv vsi" id="vsiElement"></div>
-                <div class="objDiv rsi" id="rsiElement"></div>
-                <div class="objDiv ahi" id="ahiElement"></div>
-                <div class="objDiv fhi" id="fhiElement"></div>
-                <div class="objDiv hik" id="hikElement"></div>
-                <div class="objDiv vki" id="vkiElement"></div>
-                <div class="objDiv gfi" id="gfiElement"></div>
-                <div class="objDiv kei" id="keiElement"></div>
-                <div class="spacer"></div>
+                    <div class="objDiv vfi" id="vfiElement"></div>
+                    <div class="objDiv vsi" id="vsiElement"></div>
+                    <div class="objDiv rsi" id="rsiElement"></div>
+                    <div class="objDiv ahi" id="ahiElement"></div>
+                    <div class="objDiv fhi" id="fhiElement"></div>
+                    <div class="objDiv hik" id="hikElement"></div>
+                    <div class="objDiv vki" id="vkiElement"></div>
+                    <div class="objDiv gfi" id="gfiElement"></div>
+                    <div class="objDiv kei" id="keiElement"></div>
+                    <div class="spacer"></div>
 
-                <img src="img/mid.png" class="midImg"/>
+                    <img src="img/mid.png" class="midImg"/>
+                </div>
+            
+                <img src="img/bottom.png" class="profileImg" />
             </div>
-            
-            <img src="img/bottom.png" class="profileImg" />
+        </div>
+
+        <div class="container" id="imgContainer">
+
         </div>
         <br>
         <br>
@@ -126,8 +134,8 @@
                 </tr>
                 <tr>
                     <td colspan="2" class="buttonTd">
-                        <button id="updateButton" onclick="ClickUpdateButton()">Opdater</button>
                         <button id="clearButton" onclick="ClickClearButton()">Nulstil</button>
+                        <button id="updateButton" onclick="ClickUpdateButton()">Opdater</button>
                     </td>
                 </tr>
             </table>
