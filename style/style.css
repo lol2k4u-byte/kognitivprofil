@@ -1,3 +1,4 @@
+
 .container {
     width: 100%;
 }
@@ -59,7 +60,6 @@ h1 {
     height: 100%;
     display: block;
     position: relative;
-
 }
 
 .categoriTable {
@@ -81,8 +81,9 @@ h1 {
 .categoriLabel {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 12px;
-    line-height: 1;  
+    line-height: 1;
     margin: 0px;
+    color: #000000;
 }
 
 .categoriTextBox {
@@ -93,38 +94,40 @@ h1 {
     text-align: center;
 }
 
+/* Farver */
+
 .vfi {
-    background-color: red;
+    background-color: #FF9999;
 }
 
 .vsi {
-    background-color: orange;
+    background-color: #FFBB66;
 }
 
 .rsi {
-    background-color: yellow;
+    background-color: #FFEE66;
 }
 
 .ahi {
-    background-color: lightgreen;
+    background-color: #C4E879;
 }
 
 .fhi {
-    background-color: green;
+    background-color: #70D6A0;
 }
 
 .hik {
-    background-color: lightblue;
+    background-color: #80C8FF;
 }
 
 .vki {
-    background-color: purple;
+    background-color: #BBA0F2;
 }
 
 .gfi {
-    background-color: pink;
+    background-color: #F5A0D5;
 }
 
 .kei {
-    background-color: gray;
+    background-color: #CCCCCC;
 }
